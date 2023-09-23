@@ -1,0 +1,47 @@
+* {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.bar {
+    display: flex;
+    gap: 2px;
+}
+li{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+    padding-right: 2rem;
+    font-weight: bold;
+}
+
+.fa-solid {
+    visibility: hidden;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .bar {
+        display: flex;
+        gap: 2px;
+        display: none;
+    }
+    .fa-solid {
+        visibility: visible;
+        color: white;
+    }
+}
